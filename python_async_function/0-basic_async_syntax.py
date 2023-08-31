@@ -10,7 +10,7 @@ import random
 import asyncio
 
 
-async def wait_random(max_deley=10):
+async def wait_random(max_deley: int = 10) -> float:
     """wait a random deley"""
     deley = random.uniform(0, max_deley)
     await asyncio.sleep(deley)
