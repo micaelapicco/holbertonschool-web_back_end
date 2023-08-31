@@ -3,6 +3,7 @@
 - In this repository you will find tasks and projects from the second quarter of Holberton School (Cohort #20).
 ## Index proyects
 - Variable Annotations
+- Async
  
 ## Update
 - Set, 2023
