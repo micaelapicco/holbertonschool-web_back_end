@@ -50,10 +50,11 @@ class Server:
         total_pages = int(dataset / page_size)
         next_page = 0
         prev_page = 0
-        if next_page + 1 >= total_pages:
-            next_page = None
-        else:
+
+        if next_page + 1 <= total_pages:
             next_page = page + 1
+        else:
+            next_page = None
 
         if prev_page - 1 >= 1:
             prev_page = page - 1
