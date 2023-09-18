@@ -5,42 +5,42 @@
 // Implement a getter and setter for each attribute.
 
 export default class HolbertonCourse {
-  constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
-  }
-
-  get name() {
-    return this._name;
-  }
-
-  get length() {
-    return this._length;
-  }
-
-  get students() {
-    return this._students;
-  }
-
-  set name(newName) {
-    if (typeof newName !== 'string') {
-      throw new TypeError('Name must be a string');
+    constructor(name, length, students) {
+        this.name = name;
+        this.length = length;
+        this.students = students;
     }
-    this._name = newName;
-  }
 
-  set length(newlength) {
-    if (typeof newlength !== 'number') {
-      throw new TypeError('Length must be a number');
+    get name() {
+        return this._name;
     }
-    this._length = newlength;
-  }
 
-  set students(newStudents) {
-    if (!Array.isArray(newStudents)) {
-      throw new TypeError('Students must be an array');
+    get length() {
+        return this._length;
     }
-    this._students = newStudents;
-  }
+
+    get students() {
+        return this._students;
+    }
+
+    set name(newName) {
+        if (typeof newName !== 'string') {
+            throw new TypeError('Name must be a string');
+        }
+        this._name = newName;
+    }
+
+    set length(newlength) {
+        if (typeof newlength !== 'number') {
+            throw new TypeError('Length must be a number');
+        }
+        this._length = newlength;
+    }
+
+    set students(newStudents) {
+        if (!Array.isArray(newStudents)) {
+            throw new TypeError('Students must be an array');
+        }
+        this._students = newStudents;
+    }
 }
