@@ -13,7 +13,7 @@ function handleResponseFromAPI(promise) {
     .catch((error) => {
     /* eslint-enable */
       console.log('Got a response from the API');
-      throw new Error();
+      return new Error();
     });
 }
 export default handleResponseFromAPI;
