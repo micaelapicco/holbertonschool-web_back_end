@@ -1,4 +1,4 @@
-function handleResponseFromAPI(promise) {
+export default function handleResponseFromAPI(promise) {
   return promise
     /*eslint-disable*/
     .then((data) => {
@@ -16,4 +16,4 @@ function handleResponseFromAPI(promise) {
       return new Error();
     });
 }
-export default handleResponseFromAPI;
+
