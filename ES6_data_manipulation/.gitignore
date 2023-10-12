@@ -1,0 +1,6 @@
+*main*.js
+node_modules/
+.eslintrc.js
+*package*.json
+*config*.js
+utils.js
