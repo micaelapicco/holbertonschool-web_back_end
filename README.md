@@ -16,6 +16,7 @@
 ### ES6
 - Basic
 - Clases
+- Promise
 
 ## Update
 - Set, 2023
